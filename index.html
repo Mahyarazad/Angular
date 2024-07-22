@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>body { font-size: 1.3em; }</style>
+    <title>Assignment 1</title>
+  </head>
+  <body ng-app="FoodApp">
+    <h1>Assignment 1</h1>
+    <div ng-controller="FoodController">
+      <div>
+        Your meal:
+        <input type="text" ng-model="foodInput">
+      </div>    
+      <h4 ng-if="message" class="red">{{message}} </h4>
+      <button type="button" ng-click="checkMeal();">Check If Too Much</button>
+    </div>
+  </body>
+</html>
